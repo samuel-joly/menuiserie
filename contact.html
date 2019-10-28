@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="menuiserie.css"/>
+		<title>Menuiserie - Contact</title>
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<a href="accueil.html">Accueil</a>
+				<a href="presentation.html">Présentation</a>
+				<a href="realisation.html">Réalisation</a>
+				<a href="entreprise.html">Entreprise</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+		</header>
+
+		<main>
+			<form action="thx.html">
+				<div>
+					<label for="name">Votre Nom</label>
+					<input type="text" name="name" placeholder="Alan Smithee" required>
+				</div>
+				
+				<div>
+					<label for="eMail">Votre Mail</label>
+					<input type="email" name="eMail" placeholder="Alan_Smithee@myMail.com"required>
+				</div>
+				
+				<div>
+					<label for="phone">Votre tel</label>
+					<input type="tel" name="phone"  pattern="0[0-7][0-9]{8}" placeholder="0678873909"required>
+				</div>
+				
+				<div>
+					<label>Type de devis</label>
+					<select>
+						<option>Selectionnez une options</option>
+						<option>Outils</option>
+						<option>Meubles</option>
+						<option>Rénovation</option>
+					</select>
+				</div>
+				
+				<div>
+					<label for="msg">Votre message</label>
+					<textarea cols=40 rows=10 placeholder="Entrez votre message"></textarea>
+				</div>
+				<div>
+					<input type="submit"/>
+				</div>
+			</form>
+		</main>
+
+		<footer id="scrollFooter">
+			<input type="checkbox" id="footerButton">
+			<label for="footerButton" id="footerLabel">
+				<div>
+					<span></span>
+					<span></span>
+				</div>
+			</label>
+			
+			<section id="curFooter">
+				<nav>
+					<a href="accueil.html">Accueil</a>
+					<a href="presentation.html">Présentation</a>
+					<a href="realisation.html">Réalisation</a>
+					<a href="entreprise.html">Entreprise</a>
+					<a href="contact.html">Contact</a>
+				</nav>
+				
+				<nav>
+					<a href="www.facebook.com" target="_blank"><img src="Images/facebookLogo.png"/></a>
+					<a href="www.twitter.com" target="_blank"><img src="Images/twitterLogo.png"/></a>
+					<a href="mailto:Samuel.joly@laplateforme.com"><img src="Images/gmailLogo.png"/></a>
+				</nav>
+			</section>
+		</footer>
+	</body>
+
+</html>
