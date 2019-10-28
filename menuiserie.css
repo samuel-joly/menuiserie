@@ -213,10 +213,10 @@ header nav a:before
 
 #topTitle
 {
+	background-color:#222;
 	font-size:100px;
-	text-align:center;
-	background:#222;
-	text-align:center;
+	width:640px;
+	margin:auto;
 	
 	font-family:Arvo;
 	color:white;
@@ -231,6 +231,7 @@ header nav a:before
     7px 7px 0 #fff;
 	
 	opacity:0;
+	
 	animation-name:appear;
 	animation-duration:4s;
 	animation-fill-mode:forwards;
@@ -357,6 +358,126 @@ input[type="submit"]
 }
 
 
+/* -----------------------REALISATION---------------------- */
+
+#realisationMain
+{
+	width:80%;
+	margin:auto;
+	margin-top:50px;
+	
+	display:flex;
+	flex-wrap:row wrap;
+}
+
+fieldset
+{
+	
+	width:300px;
+	border:3px solid white;
+	
+	color:white;
+	font-size:20px;
+	
+	box-shadow:
+	-3px -3px 0 #222,
+	-3px 3px 0 #222,
+	3px -3px 0 #222,
+	3px 3px 0 #222,
+	6px 6px 0 #fff,
+    7px 7px 0 #fff,
+    8px 8px 0 #fff,
+    9px 9px 0 #fff;
+	
+	transition:transform 1s ease;
+	
+	margin:30px;
+}
+
+fieldset:hover
+{
+	transform:scale(1.1);
+}
+
+fieldset legend
+{
+	font-size:30px;
+	font-family:"Seaweed";
+}
+
+fieldset article 
+{
+	font-family:"Arvo";
+	text-align:justify;
+}
+
+fieldset article h1
+{
+	
+	text-decoration:underline;
+	text-align:center;
+}
+
+fieldset img
+{
+	width:280px;
+	margin:auto;
+}
+
+
+
+
+
+/* -----------------------ENTREPRISE--------------------- */
+
+#entrepriseMain
+{
+	width:80%;
+	margin:auto;
+	display:flex;
+	flex-direction:column;
+	color:white;
+	font-size:30px;
+}
+
+
+#entrepriseMain article
+{
+	display:flex;
+	padding-bottom:3rem;
+	border-bottom:1px solid;
+	border-image: linear-gradient(to right, transparent, white, transparent) 100% 1;
+	
+}
+
+#entrepriseCondensed
+{
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction:row;
+	
+	width:200px;
+	height:300px;
+}
+
+#entrepriseMainarticle
+{
+	padding-top:150px;
+}
+
+#entrepriseMain img
+{
+	width:90px;
+	margin:auto;
+}
+
+#entrepriseMain article p
+{
+	width:70%;
+	margin:auto;
+	margin-top:10%;
+	
+}
 /* ----------------------FOOTER---------------------- */
 
 
