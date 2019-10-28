@@ -274,6 +274,89 @@ header nav a:before
 	text-align:center;
 }
 
+
+/* --------------------------CONTACT--------------------- */
+
+form
+{
+	width:600px;
+	
+	margin:auto;
+	margin-top:200px;
+	
+	
+	border-right:2px solid ;
+	border-left:2px solid ;
+	
+	border-image: linear-gradient(transparent, white, transparent) 1 100%;
+	
+	color:white;
+	font-size:25px;
+	
+	
+	opacity:0;
+	transform:translateY(-45rem);
+	
+	overflow-y:hidden;
+	animation-name:from-top;
+	animation-duration:1s;
+	animation-fill-mode:forwards;
+}
+
+@keyframes from-top
+{
+	from{opacity:0;}
+	to{opacity:1;
+		transform:translateY(0rem);}
+}
+
+form>div
+{
+	width:80%;
+	
+	display:flex;
+	justify-content:space-between;
+	
+	margin:auto;
+	padding:10px;
+	
+	text-align:left;
+}
+
+form>div input, form>div select
+{
+	width:60%;
+	height:25px;
+}
+
+form>div input, select, textarea
+{
+	background-color:rgba(40,40,40,0.4);
+	border:1px solid grey;
+	padding:3px;
+	color:white;
+	font-family:Arial;
+	border-radius:5px;
+}
+
+select
+{
+	color:grey;
+}
+
+textarea
+{
+	resizable:none;
+	font-size:13px;
+}
+
+input[type="submit"]
+{
+	width:80px;
+	margin:auto;
+}
+
+
 /* ----------------------FOOTER---------------------- */
 
 

@@ -3,10 +3,10 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="menuiserie.css"/>
-		<title>Menuiserie - Accueil</title>
+		<title>Menuiserie - Contact</title>
 	</head>
 
-	<body id="mainBody">
+	<body>
 		<header>
 			<nav>
 				<a href="accueil.html">Accueil</a>
@@ -18,15 +18,43 @@
 		</header>
 
 		<main>
-			<section id="mainTitle">
-				<p>Bienvenue chez</p>
-				<p>MonBoMeubl</p>
-				<p>Artisan local</p>
-			</section>
-				<p>Depuis 2008</p>
+			<form action="thx.html">
+				<div>
+					<label for="name">Votre Nom</label>
+					<input type="text" name="name" placeholder="Alan Smithee" required>
+				</div>
+				
+				<div>
+					<label for="eMail">Votre Mail</label>
+					<input type="email" name="eMail" placeholder="Alan_Smithee@myMail.com"required>
+				</div>
+				
+				<div>
+					<label for="phone">Votre tel</label>
+					<input type="tel" name="phone"  pattern="0[0-7][0-9]{8}" placeholder="0678873909"required>
+				</div>
+				
+				<div>
+					<label>Type de devis</label>
+					<select>
+						<option>Selectionnez une options</option>
+						<option>Outils</option>
+						<option>Meubles</option>
+						<option>Rénovation</option>
+					</select>
+				</div>
+				
+				<div>
+					<label for="msg">Votre message</label>
+					<textarea cols=40 rows=10 placeholder="Entrez votre message"></textarea>
+				</div>
+				<div>
+					<input type="submit"/>
+				</div>
+			</form>
 		</main>
 
-		<footer>
+		<footer id="scrollFooter">
 			<input type="checkbox" id="footerButton">
 			<label for="footerButton" id="footerLabel">
 				<div>
